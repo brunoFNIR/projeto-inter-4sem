@@ -1,4 +1,4 @@
 package br.com.bkmmtech.controller;
 
-public class ControllerTelaPrincipal {
+public class ProdutoController {
 }

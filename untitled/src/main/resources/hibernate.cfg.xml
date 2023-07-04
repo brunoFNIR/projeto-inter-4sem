@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configuração do banco de dados -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bkmmtech</property>
+        <property name="hibernate.connection.username">brunofnir</property>
+        <property name="hibernate.connection.password">brunofnirprojeto1234</property>
+
+        <!-- Dialeto do banco de dados -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- Opções adicionais -->
+        <property name="hibernate.hbm2ddl.auto">update</property> <!-- Cria e atualiza o esquema do banco de dados -->
+        <property name="hibernate.show_sql">true</property> <!-- Mostra o SQL gerado pelo Hibernate -->
+
+        <!-- Mapeamento de classes -->
+        <mapping class="br.com.bkmmtech.model.Cliente"/>
+        <mapping class="br.com.bkmmtech.model.Produto"/>
+        <mapping class="br.com.bkmmtech.model.Compra"/>
+        <mapping class="br.com.bkmmtech.model.NotaFiscal"/>
+    </session-factory>
+</hibernate-configuration>
